@@ -1,0 +1,24 @@
+python-for-ml/
+│
+├── 01_python_basics
+├── 02_builtin_data_structuresl
+├── 03_pythonic_thinking
+├── 04_oop_in_python
+├── 05_error_handling_and_debugging
+├── 06_modules_packages_and_import_system
+├── 07_file_handling_and_serialization
+├── 08_numpy_numerical_computing
+├── 09_data_analysis_with_pandas
+├── 10_data_visualization
+├── 11_python_standard_library
+├── 12_async_and_parallel_python
+│   
+| (ADVANCE)
+├── 13_type_hints_and_typing
+├── 14_decorators_and_context_managers
+├── 15_python_performance_and_profiling
+├── 16_data_storage_formats
+├── 17_configuration_management
+├── 18_testing_in_python
+├── 19_packaging_and_distribution
+└── 20_building_cli_tools
