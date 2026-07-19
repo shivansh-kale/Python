@@ -383,7 +383,168 @@ pyproject.toml
 
 ---
 
-# 9. Best Practices
+# 9. UV (Modern Python Package & Environment Manager) 
+
+##  What is UV?
+
+- Modern Python package & environment manager
+-  Written in **Rust** (by Astral, creators of Ruff)
+-  **10–100x faster** than traditional Python tooling
+-  Replaces multiple tools:
+  -  `pip`
+  -  `venv`
+  -  `virtualenv`
+  -  `pip-tools`
+  -  Much of **Poetry**'s workflow
+
+---
+
+##  Features
+
+-  Package management
+-  Virtual environments
+-  Dependency resolution
+-  Lock files (`uv.lock`)
+-  Python version management
+-  Run scripts without activating venv
+-  Uses standard `pyproject.toml`
+
+---
+
+##  Installation
+
+```bash
+pip install uv
+```
+
+or (Recommended)
+
+```bash
+# Windows
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+# Mac/Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+---
+
+##  Common Commands
+
+### Create Project
+
+```bash
+uv init my_project
+```
+
+### Create Virtual Environment
+
+```bash
+uv venv
+```
+
+### Activate Environment
+
+Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+Linux / macOS
+
+```bash
+source .venv/bin/activate
+```
+
+### Add Package
+
+```bash
+uv add numpy
+```
+
+### Remove Package
+
+```bash
+uv remove numpy
+```
+
+### Install Project Dependencies
+
+```bash
+uv sync
+```
+
+### Run Python Script
+
+```bash
+uv run main.py
+```
+
+or
+
+```bash
+uv run python main.py
+```
+
+---
+
+##  Important Files
+
+| File | Purpose |
+|------|---------|
+|  `pyproject.toml` | Project configuration & dependencies |
+|  `uv.lock` | Exact dependency versions |
+|  `.venv/` | Virtual environment |
+
+---
+
+##  UV vs Traditional Workflow
+
+| Traditional | UV |
+|-------------|----|
+| `python -m venv` | `uv venv` |
+| `pip install` | `uv add` |
+| `pip install -r requirements.txt` | `uv sync` |
+| `python main.py` | `uv run main.py` |
+
+---
+
+##  Why Use UV?
+
+-  Extremely fast
+-  One tool for packages + environments
+-  Reproducible builds (`uv.lock`)
+-  Standard `pyproject.toml`
+-  Cleaner workflow
+-  Becoming the preferred choice for modern Python, AI & MLOps projects
+
+---
+
+##  Quick Cheat Sheet
+
+```bash
+uv init project      # Create project
+uv venv              # Create virtual env
+uv add numpy         # Install package
+uv remove numpy      # Uninstall package
+uv sync              # Install all dependencies
+uv run main.py       # Run script
+uv lock              # Update lock file
+uv python list       # List Python versions
+uv python install    # Install Python version
+```
+
+---
+
+##  Summary
+
+> **UV = pip + venv + pip-tools + much of Poetry**
+>
+>  One fast tool to manage **Python projects, packages, virtual environments, and dependencies**.
+
+
+# 10. Best Practices
 
 When working with modules, packages, and environments:
 
