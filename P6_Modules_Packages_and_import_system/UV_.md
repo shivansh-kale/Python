@@ -9,7 +9,7 @@ uv init demo_project
 cd demo_project
 ```
 
-Project structure:
+#Project structure:
 
 ```text
 demo_project/
