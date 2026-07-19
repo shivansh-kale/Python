@@ -72,6 +72,13 @@ for num in count(5):
     print(num)
 ```
 
+* yield creates a generator.
+* A generator produces one value at a time.
+* After yielding a value, it pauses.
+* On the next request, it continues from where it paused.
+* Generators save memory because they don't store all values at once.
+* They are especially useful when working with large datasets, files, streams, or infinite sequences.
+
 ---
 
 # 3. zip()
