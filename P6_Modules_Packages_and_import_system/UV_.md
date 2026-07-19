@@ -1,8 +1,8 @@
 ---
 
-# 💻 Example Workflow (UV)
+#  Example Workflow (UV)
 
-## 1️⃣ Create a New Project
+## 1️ Create a New Project
 
 ```bash
 uv init demo_project
@@ -24,7 +24,7 @@ demo_project/
 
 ---
 
-## 2️⃣ Create Virtual Environment
+## 2️ Create Virtual Environment
 
 ```bash
 uv venv
@@ -42,7 +42,7 @@ source .venv/bin/activate
 
 ---
 
-## 3️⃣ Install Dependencies
+## 3. Install Dependencies
 
 ```bash
 uv add numpy pandas
@@ -55,7 +55,7 @@ Automatically updates:
 
 ---
 
-## 4️⃣ Write Some Code
+## 4️. Write Some Code
 
 ```python
 # main.py
@@ -86,17 +86,17 @@ Output
 
 ---
 
-## 5️⃣ Run the Program
+## 5️. Run the Program
 
 ```bash
 uv run main.py
 ```
 
-> ✅ No need to manually activate the virtual environment.
+>  No need to manually activate the virtual environment.
 
 ---
 
-## 6️⃣ Share Your Project
+## 6️. Share Your Project
 
 Another developer only needs:
 
@@ -110,13 +110,13 @@ uv run main.py
 
 `uv sync` automatically:
 
-- 🌱 Creates `.venv`
-- 📦 Installs all dependencies
-- 🔒 Uses versions from `uv.lock`
+-  Creates `.venv`
+-  Installs all dependencies
+-  Uses versions from `uv.lock`
 
 ---
 
-# 🔥 Typical Modern Workflow
+#  Typical Modern Workflow
 
 ```text
 uv init my_project
@@ -151,7 +151,7 @@ uv run main.py
 
 ---
 
-## ⚡ Migration from pip
+##  Migration from pip
 
 | Old Workflow | UV Workflow |
 |--------------|-------------|
